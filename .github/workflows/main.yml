@@ -34,3 +34,10 @@ jobs:
         run: |
           echo $RUNNER_WORKSPACE
           dir $RUNNER_WORKSPACE
+          
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: print runner environmrnt var
+        run: echo env
