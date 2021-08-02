@@ -31,7 +31,7 @@ jobs:
       - name: Run PS
         shell: powershell
         run: |
-          $filepath = $RUNNER_TEMP
+          $filepath = "$($RUNNER_WORKSPACE)\test"
           echo $filePath
 
       # Runs a set of commands using the runners shell
