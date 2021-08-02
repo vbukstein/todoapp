@@ -56,3 +56,4 @@ jobs:
         shell: pwsh
         run: |
           echo ${env:TEST_2}
+          echo ${env:GITHUB_WORKSPACE}
