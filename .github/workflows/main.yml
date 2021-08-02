@@ -50,4 +50,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: print runner environmrnt var
-        run: env
+        shell: pwsh
+        run: |
+          echo ${env:TEST_1}
