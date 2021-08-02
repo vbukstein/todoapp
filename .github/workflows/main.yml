@@ -35,7 +35,7 @@ jobs:
       - name: Run PS
         shell: powershell
         run: |
-          $filepath = "$($RUNNER_WORKSPACE)\test"
+          $filepath = "${env:RUNNER_WORKSPACE}\test"
           echo $filePath
           echo ${env:TEST_1}
 
