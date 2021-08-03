@@ -64,4 +64,6 @@ jobs:
           echo ${env:GITHUB_WORKSPACE}
           
       - name: Test
-        run: ls -lh
+        run: |
+          ls -lh
+          grep <version> src/pom.xml
