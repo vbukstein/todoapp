@@ -62,3 +62,6 @@ jobs:
         run: |
           echo ${env:TEST_2}
           echo ${env:GITHUB_WORKSPACE}
+          
+      - name: Get pom file
+        run: grep <version> /src/pom.xml
