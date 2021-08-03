@@ -64,4 +64,4 @@ jobs:
           echo ${env:GITHUB_WORKSPACE}
           
       - name: Get pom file
-        run: grep <version> /src/pom.xml
+        run: grep <version> /home/runner/work/todoapp/todoapp/src/pom.xml
