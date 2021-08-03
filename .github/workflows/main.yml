@@ -66,4 +66,5 @@ jobs:
       - name: Test
         run: |
           ls -lh /home/runner/work/todoapp/todoapp/src
-          grep 'SNAPSHOT' src/pom.xml
+          v = grep 'SNAPSHOT' src/pom.xml
+          echo $v
