@@ -65,5 +65,5 @@ jobs:
           
       - name: Test
         run: |
-          ls -lh
-          grep <version> src/pom.xml
+          ls -lh /home/runner/work/todoapp/todoapp/src
+          #grep <version> src/pom.xml
