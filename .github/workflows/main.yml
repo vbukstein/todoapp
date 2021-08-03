@@ -21,7 +21,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     env: 
      TEST_1 : test
 
@@ -33,10 +33,14 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: env
+      - name: Update env var
+        run: echo "::set-env name=TEST_1::failure"
+      - name: Print env var
+        run: echo 'Tne variable is ' $TEST_1
       - name: Test
         run: docker
       - name: Run PS
-        shell: powershell
+        shell: pwsh
         run: |
           $filepath = "${env:RUNNER_TEMP}\test"
           echo $filePath
