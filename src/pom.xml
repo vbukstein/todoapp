@@ -77,6 +77,7 @@
 	</executions>
       </plugin>
       <plugin>
+	  <!-- This comment is for test only -->    
           <!-- This plugin will set the properties values using dependency information -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
