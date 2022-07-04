@@ -17,6 +17,8 @@ pipeline {
         sh 'npm install'
       }
     }
+    
+    //edited for testing only
      
     stage('Test') {
       steps {
